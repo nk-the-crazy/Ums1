@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+                                    "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+ 
+<tiles-definitions>
+    <definition name=".footer" template="/WEB-INF/views/templates/footer.jsp"></definition>
+    <definition name=".header" template="/WEB-INF/views/templates/header.jsp"></definition>
+    
+    <!-- Header -->
+    <definition name="header-panel" template="/WEB-INF/views/templates/header-panel.jsp">
+        <put-attribute name="title" value="" />
+    </definition>    
+    
+    <!-- Base -->
+    <definition name="base" template="/WEB-INF/views/templates/base.jsp">
+
+        <put-attribute name="header" value=".header" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value=".footer" />
+        <put-attribute name="js-addons" value="" />
+    </definition>
+    
+    <!-- Base Minor -->
+    <definition name="base-minor" template="/WEB-INF/views/templates/base-minor.jsp">
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value=".footer" />
+        <put-attribute name="js-addons" value="" />
+    </definition>
+    
+    
+</tiles-definitions>
